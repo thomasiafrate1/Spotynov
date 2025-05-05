@@ -1,0 +1,15 @@
+{
+  "name": "backend-spotynov",
+  "version": "1.0.0",
+  "description": "Backend pour Spotynov",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "swagger-ui-express": "^4.6.3"
+  }
+}
