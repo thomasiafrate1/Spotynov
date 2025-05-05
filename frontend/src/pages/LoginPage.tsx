@@ -11,8 +11,7 @@ const LoginPage = () => {
         try {
             const response = await api.post('/auth/login', { username, password });
             localStorage.setItem('token', response.data.token);
-            alert('Login réussi ✅');
-            navigate('/home'); // Redirection vers page d'accueil
+            navigate('/home');
         } catch (error) {
             alert('Erreur de login ❌');
         }

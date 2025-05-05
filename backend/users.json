@@ -3,9 +3,11 @@
     "username": "Thomas",
     "password": "74d77b75d7ae9f0244ea37937d3556225b5fa9dbd2e25d68387b61877e4cdc97",
     "group": {
-      "name": "p",
+      "name": "po",
       "isAdmin": true
     },
-    "spotify": null
+    "spotify": {
+      "displayName": "thomasiafrate"
+    }
   }
 ]

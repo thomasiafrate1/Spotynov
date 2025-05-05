@@ -10,6 +10,8 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+const spotifyRoutes = require('./routes/spotifyRoutes');
+app.use('/api/spotify', spotifyRoutes);
 
 app.use('/api/auth', authRoutes);
 app.use('/api/groups', groupRoutes);
