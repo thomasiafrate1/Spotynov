@@ -3,11 +3,12 @@
     "username": "Thomas",
     "password": "74d77b75d7ae9f0244ea37937d3556225b5fa9dbd2e25d68387b61877e4cdc97",
     "group": {
-      "name": "po",
+      "name": "hjkk",
       "isAdmin": true
     },
     "spotify": {
       "displayName": "thomasiafrate"
-    }
+    },
+    "spotifyToken": "BQDRwFPPDa4bv0nmyBrJ-gjSyTRD4fXlryLXgxh3RXeG3pp2oUsYbMGYt4Ng_5UeMuQmYPy3S89igFz25M0gkmyHTG-W8aXVi0DgtoR7k5s_0VaRs-v0Z6qhUmAPzkUNLgMcTYhDRWJf-EvwFj4sM0iDDTu4-k32DMFzIOTU01PvNj7E368v8vWSbGKLPWBbkRYtmkvq2MhBU6YNqp8C9Dv5oC5FP8jCW1oKoXTMag7SJqPKIEx5FBM32R-iHg"
   }
 ]

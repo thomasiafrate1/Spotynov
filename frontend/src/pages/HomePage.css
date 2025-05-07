@@ -1,0 +1,63 @@
+.home-container {
+    padding: 20px;
+}
+
+.title-main {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.title-clickable {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.profile-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 10px;
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+}
+
+.profile-section {
+    margin-top: 20px;
+}
+
+.block-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    width: 300px;
+}
+
+.block-spotify {
+    border: 1px solid #1DB954;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.block-spotify button {
+    width: 100%;
+    padding: 8px;
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.album-image {
+    width: 100px;
+    border-radius: 8px;
+    margin-top: 10px;
+}

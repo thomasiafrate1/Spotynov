@@ -23,12 +23,11 @@ exports.register = (req, res) => {
 exports.login = (req, res) => {
     const { username, password } = req.body;
     const users = readUsersFile();
-    const token = jwt.sign({ username: user.username }, secretKey, { expiresIn: '1h' });
-
-    const user = users.find(u => u.username === username);
+    const user = users.find(u => u.username === username); 
     if (!user || !verifyPassword(password, user.password)) {
         return res.status(400).json({ message: 'Invalid credentials' });
     }
+    const token = jwt.sign({ username: user.username }, secretKey, { expiresIn: '1h' });
     res.json({ token });
 };
 
@@ -39,11 +38,6 @@ exports.getMe = (req, res) => {
     if (!user) {
         return res.status(404).json({ message: 'Utilisateur non trouvé' });
     }
-    console.log('✅ Données envoyées à /auth/me :', {
-        username: user.username,
-        group: user.group,
-        spotify: user.spotify
-    });
     res.json({
         username: user.username,
         group: user.group,

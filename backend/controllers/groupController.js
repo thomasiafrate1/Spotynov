@@ -22,13 +22,11 @@ exports.joinGroup = (req, res) => {
             const others = oldGroupMembers.filter(u => u.username !== username);
             const newAdmin = others[Math.floor(Math.random() * others.length)];
             newAdmin.group.isAdmin = true;
-            console.log(`👑 ${newAdmin.username} devient Admin du groupe ${oldGroupName}`);
         }
         user.group = null;
 
         const stillMembers = users.filter(u => u.group && u.group.name === oldGroupName);
         if (stillMembers.length === 0) {
-            console.log(`🗑️ Le groupe ${oldGroupName} est supprimé car il n'a plus de membres.`);
         }
     }
 
@@ -36,10 +34,8 @@ exports.joinGroup = (req, res) => {
 
     if (groupAlreadyExists) {
         user.group = { name: groupName.trim(), isAdmin: false };
-        console.log(`ℹ️ ${username} a rejoint le groupe existant ${groupName}`);
     } else {
         user.group = { name: groupName.trim(), isAdmin: true };
-        console.log(`🆕 ${username} a créé le groupe ${groupName} et devient Admin`);
     }
 
     writeUsersFile(users);
